@@ -1,0 +1,7 @@
+tasks:
+  - init: 'echo "TODO: Replace with init/build command"'
+    command: 'echo "TODO: Replace with command to start project"'
+
+vscode:
+  extensions:
+    - k--kato.intellij-idea-keybindings@0.2.41:z3sqna/oPDSHgta8ZOldPA==
