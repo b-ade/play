@@ -1,0 +1,21 @@
+{
+  // Use IntelliSense to learn about possible attributes.
+  // Hover to view descriptions of existing attributes.
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "type": "java",
+      "name": "Debug (Launch) - Current File",
+      "request": "launch",
+      "mainClass": "${file}"
+    },
+    {
+      "type": "java",
+      "name": "Debug (Launch)-Palindrome<play_ac51065d>",
+      "request": "launch",
+      "mainClass": "Palindrome",
+      "projectName": "play_ac51065d",
+      "args": ["banana","million"]
+    }
+  ]
+}
