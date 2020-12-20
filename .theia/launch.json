@@ -15,7 +15,15 @@
       "request": "launch",
       "mainClass": "Palindrome",
       "projectName": "play_ac51065d",
-      "args": ["banana","million"]
+      "args": ["banana","million","tracecars"]
+    },
+    {
+      "type": "java",
+      "name": "Debug (Launch)-MathTypeStuff",
+      "request": "launch",
+      "mainClass": "MathTypeStuff",
+      "projectName": "play_ac51065d",
+      "args": ["342","665"]
     }
   ]
 }
