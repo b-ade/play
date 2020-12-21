@@ -24,6 +24,14 @@
       "mainClass": "MathTypeStuff",
       "projectName": "play_ac51065d",
       "args": ["342","665"]
+    },
+    {
+      "type": "java",
+      "name": "Debug (Launch)-NonRepeating",
+      "request": "launch",
+      "mainClass": "NonRepeatingCharacters",
+      "projectName": "play_ac51065d",
+      "args": ["abrkaabcdefghijjxxx"]
     }
   ]
 }
