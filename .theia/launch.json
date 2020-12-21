@@ -32,6 +32,15 @@
       "mainClass": "NonRepeatingCharacters",
       "projectName": "play_ac51065d",
       "args": ["abrkaabcdefghijjxxx"]
+    },
+    {
+      "type": "java",
+      "name": "Debug (Launch)-FakeCompiler",
+      "request": "launch",
+      "mainClass": "FakeCompiler",
+      "projectName": "play_ac51065d",
+      "args": ["((()))","[()]{}","({[)]","()(){(())" ,"","([{}])()","()()}{(())}"
+        ,"()(){}{}()[()(()(){}{}()[((()(){}{}()[]{(())}))]{(())}()(){}{}()[]{(())}){}{}()[]{(())}]{(())}"]
     }
   ]
 }
