@@ -57,6 +57,14 @@
       "mainClass": "UniqueListSort",
       "projectName": "play_ac51065d",
       "args": ["[3, 3, 2, 1, 3, 2, 1]","[8,4,8,8,8,2,8,2]"]
+    },
+    {
+      "type": "java",
+      "name": "Debug (Launch)-SubCheck",
+      "request": "launch",
+      "mainClass": "SubCheck",
+      "projectName": "play_ac51065d",
+      "args": ["[4, 7, 1 , -3, 2],5"]
     }
   ]
 }
