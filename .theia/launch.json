@@ -5,6 +5,13 @@
   "configurations": [
     {
         "type": "java",
+        "name": "CodeLens (Launch) - EditDistance",
+        "request": "launch",
+        "mainClass": "EditDistance",
+        "projectName": "play_ac51065d"
+    },
+    {
+        "type": "java",
         "name": "CodeLens (Launch) - LinkedListMinimization",
         "request": "launch",
         "mainClass": "LinkedListMinimization",
