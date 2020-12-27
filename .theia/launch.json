@@ -5,6 +5,13 @@
   "configurations": [
     {
         "type": "java",
+        "name": "CodeLens (Launch) - LinkedListMinimization",
+        "request": "launch",
+        "mainClass": "LinkedListMinimization",
+        "projectName": "play_ac51065d"
+    },
+    {
+        "type": "java",
         "name": "CodeLens (Launch) - SubArrays_1",
         "request": "launch",
         "mainClass": "SubArrays_1",
