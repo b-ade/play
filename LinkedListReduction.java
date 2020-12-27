@@ -8,7 +8,7 @@
 
 // The consecutive nodes 5 -> -3 -> -3 -> 1 sums up to 0 so that sequence should be removed. 4 -> -4 also sums up to 0 too so that sequence should also be removed.
 
-public class LinkedListMinimization{
+public class LinkedListReduction {
     public static void main(String[] args) {
         int[] list = {10,5,-3,-3,1,4,-4};
 
