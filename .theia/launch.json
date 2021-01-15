@@ -5,6 +5,13 @@
   "configurations": [
     {
         "type": "java",
+        "name": "CodeLens (Launch) - ValidateBinaryTree",
+        "request": "launch",
+        "mainClass": "ValidateBinaryTree",
+        "projectName": "play_ac51065d"
+    },
+    {
+        "type": "java",
         "name": "CodeLens (Launch) - BinaryTreeValuesAtHeight",
         "request": "launch",
         "mainClass": "BinaryTreeValuesAtHeight",
