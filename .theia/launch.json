@@ -5,6 +5,13 @@
   "configurations": [
     {
         "type": "java",
+        "name": "CodeLens (Launch) - MaximizeProfit",
+        "request": "launch",
+        "mainClass": "MaximizeProfit",
+        "projectName": "play_ac51065d"
+    },
+    {
+        "type": "java",
         "name": "CodeLens (Launch) - TreeFromList",
         "request": "launch",
         "mainClass": "TreeFromList",
