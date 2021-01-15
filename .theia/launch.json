@@ -5,6 +5,13 @@
   "configurations": [
     {
         "type": "java",
+        "name": "CodeLens (Launch) - TreeFromList",
+        "request": "launch",
+        "mainClass": "TreeFromList",
+        "projectName": "play_ac51065d"
+    },
+    {
+        "type": "java",
         "name": "CodeLens (Launch) - TrappingWater",
         "request": "launch",
         "mainClass": "TrappingWater",
