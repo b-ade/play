@@ -5,6 +5,13 @@
   "configurations": [
     {
         "type": "java",
+        "name": "CodeLens (Launch) - DeepestNode",
+        "request": "launch",
+        "mainClass": "DeepestNode",
+        "projectName": "play_ac51065d"
+    },
+    {
+        "type": "java",
         "name": "CodeLens (Launch) - WitnessCount",
         "request": "launch",
         "mainClass": "WitnessCount",
