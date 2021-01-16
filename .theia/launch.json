@@ -5,6 +5,13 @@
   "configurations": [
     {
         "type": "java",
+        "name": "CodeLens (Launch) - UnivalSubtrees",
+        "request": "launch",
+        "mainClass": "UnivalSubtrees",
+        "projectName": "play_ac51065d"
+    },
+    {
+        "type": "java",
         "name": "CodeLens (Launch) - ValidateBinaryTree",
         "request": "launch",
         "mainClass": "ValidateBinaryTree",
