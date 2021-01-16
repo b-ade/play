@@ -5,6 +5,13 @@
   "configurations": [
     {
         "type": "java",
+        "name": "CodeLens (Launch) - FirstMissingPositiveInteger",
+        "request": "launch",
+        "mainClass": "FirstMissingPositiveInteger",
+        "projectName": "play_ac51065d"
+    },
+    {
+        "type": "java",
         "name": "CodeLens (Launch) - LongestSubWithUniqueChars",
         "request": "launch",
         "mainClass": "LongestSubWithUniqueChars",
