@@ -75,7 +75,7 @@ public class UnivalSubtrees {
         int value;
 
         public Node(int v){
-            this.value = 0;
+            this.value = v;
         }
     }
 }
