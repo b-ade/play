@@ -5,6 +5,13 @@
   "configurations": [
     {
         "type": "java",
+        "name": "CodeLens (Launch) - ReverseLinkedList",
+        "request": "launch",
+        "mainClass": "ReverseLinkedList",
+        "projectName": "play_ac51065d"
+    },
+    {
+        "type": "java",
         "name": "CodeLens (Launch) - InvertBinaryTree",
         "request": "launch",
         "mainClass": "InvertBinaryTree",
