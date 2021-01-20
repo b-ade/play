@@ -5,6 +5,13 @@
   "configurations": [
     {
         "type": "java",
+        "name": "CodeLens (Launch) - SortColors",
+        "request": "launch",
+        "mainClass": "SortColors",
+        "projectName": "play_ac51065d"
+    },
+    {
+        "type": "java",
         "name": "CodeLens (Launch) - WordSorting",
         "request": "launch",
         "mainClass": "WordSorting",
