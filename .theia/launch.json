@@ -5,6 +5,13 @@
   "configurations": [
     {
         "type": "java",
+        "name": "CodeLens (Launch) - MergeIntervals",
+        "request": "launch",
+        "mainClass": "MergeIntervals",
+        "projectName": "play_ac51065d"
+    },
+    {
+        "type": "java",
         "name": "CodeLens (Launch) - ThreeSum",
         "request": "launch",
         "mainClass": "ThreeSum",
