@@ -5,6 +5,13 @@
   "configurations": [
     {
         "type": "java",
+        "name": "CodeLens (Launch) - ReconstructingBinaryTree",
+        "request": "launch",
+        "mainClass": "ReconstructingBinaryTree",
+        "projectName": "play_ac51065d"
+    },
+    {
+        "type": "java",
         "name": "CodeLens (Launch) - SortColors",
         "request": "launch",
         "mainClass": "SortColors",
