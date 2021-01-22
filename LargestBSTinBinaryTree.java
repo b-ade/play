@@ -17,48 +17,45 @@ public class LargestBSTinBinaryTree{
     }
 
     static Node getLargestBSTIn(Node root){
-        Result info = new Result();
+        Result info = new Result(null,0);
         boolean found = false;
-        List<Node> potentials = new ArrayList<>();
-        potentials.add(root);
+        List<Node> atDepth = new ArrayList<>(), replaceMent = new ArrayList<>();
+        atDepth.add(root);
         Node current;
-        for (int i = 0; i < potentials.size(); i++) {
-            current = potentials.get(i);
-            if(current.left != null){
-                if(isValid(current.left)){
-                    Result temp = new Result();
-                    temp.currentNode = current.left;
-                    temp.currentNodeSize = current.left.getSize();
-                    info.checkAndReplace(temp);
-                    found |= true;
+        while(atDepth.size() > 0){
+            replaceMent.clear();
+
+            //iterate through all nodes at current depth
+            for (int i = 0; i < atDepth.size(); i++) {
+                current = atDepth.get(i);
+                if(current.left != null){
+                    if(isValid(current.left)){
+                        Result temp = new Result(current.left,current.left.getSize());
+                        info.checkAndReplace(temp);
+                        found |= true;
+                    }
                 }
-            }
-            if(current.right != null){
-                if(isValid(current.right)){
-                    Result temp = new Result();
-                    temp.currentNode = current.right;
-                    temp.currentNodeSize = current.right.getSize();
-                    info.checkAndReplace(temp);
-                    found |= true;
+                if(current.right != null){
+                    if(isValid(current.right)){
+                        Result temp = new Result(current.right,current.right.getSize());
+                        info.checkAndReplace(temp);
+                        found |= true;
+                    }
                 }
             }
 
             if(found)//since starting from the root, no need to go any further when the a 
                 break;//valid tree is reached
 
-            //no valid tree was found at depth, continue searching in a breadth first manner
-            if(current.left != null){
-                if(current.left.left != null)
-                    potentials.add(current.left.left);
-                if(current.left.right != null)
-                    potentials.add(current.left.right);
+            //no valid was foud at depth
+            for(Node atL: atDepth){
+                if(atL.left != null)
+                    replaceMent.add(atL.left);
+                if(atL.right != null)
+                    replaceMent.add(atL.right);
             }
-            if(current.right != null){
-                if(current.right.left != null)
-                    potentials.add(current.right.left);
-                if(current.right.right != null)
-                    potentials.add(current.right.right);
-            }
+            atDepth.clear();//move to next level
+            atDepth.addAll(replaceMent);
         }
         return info.currentNode;
     }
@@ -84,6 +81,11 @@ public class LargestBSTinBinaryTree{
     static class Result{
         Node currentNode;
         int currentNodeSize;
+
+        public Result(Node node,int nodeSize){
+            this.currentNode = node;
+            this.currentNodeSize = nodeSize;
+        }
 
         void checkAndReplace(Result potential){
             if(potential != null){
