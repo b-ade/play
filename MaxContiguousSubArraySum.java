@@ -9,6 +9,8 @@
 // Your solution should run in linear time.
 
 import java.util.Arrays;
+import java.util.HashMap;
+import java.util.Map;
 
 public class MaxContiguousSubArraySum {
 
@@ -25,11 +27,13 @@ public class MaxContiguousSubArraySum {
 
         int[] result = { -1, -1 , 0};//subarray-start,subarray-end,max
 
+        Map<String,Integer> memo = new HashMap<>();
+        
         for (int subArraySize = array.length - 1 ; subArraySize >= 0 ; subArraySize--) {
             subArraysCount = array.length - subArraySize + 1;
             for (int subArrayStart = 0; subArrayStart < subArraysCount; subArrayStart++) {
                 subArrayEnd = subArrayStart + subArraySize - 1;
-                sum = subArraySum(array,subArrayStart, subArrayEnd);
+                sum = subArraySum(array,subArrayStart, subArrayEnd,memo);
                 if(sum > result[2]){
                     result = new int[]{ subArrayStart, subArrayEnd, sum};
                 }
@@ -38,8 +42,20 @@ public class MaxContiguousSubArraySum {
         return result;
     }
     
-    static int subArraySum(int[] array, int startIndex,int endIndex){
+    static int subArraySum(int[] array, int startIndex,int endIndex, Map<String, Integer> memo) {
         int sum = 0;
+        int subArrayLength = endIndex - startIndex + 1;
+        String subArrayKey = startIndex + "-"+subArrayLength;
+        if(startIndex < (endIndex - 1)){//start memoing from two elements upwards
+            if(memo.containsKey(subArrayKey))
+                return memo.get(subArrayKey);
+            else{
+                sum = array[startIndex] + subArraySum(array,startIndex + 1, endIndex,memo);
+                memo.put(subArrayKey, sum);
+                return sum;
+            }
+        }
+
         for (int i = startIndex; i <= endIndex; i++) {
             sum += array[i];
         }
