@@ -5,15 +5,16 @@
   "configurations": [
     {
         "type": "java",
-<<<<<<< HEAD
-        "name": "CodeLens (Launch) - GroupWords",
-        "request": "launch",
-        "mainClass": "GroupWords",
-=======
         "name": "CodeLens (Launch) - MedianStream",
         "request": "launch",
         "mainClass": "MedianStream",
->>>>>>> 659fef128a84f09fa84171202b14a261bf4a3671
+        "projectName": "play_ac51065d"
+    },
+    {
+        "type": "java",
+        "name": "CodeLens (Launch) - GroupWords",
+        "request": "launch",
+        "mainClass": "GroupWords",
         "projectName": "play_ac51065d"
     },
     {
