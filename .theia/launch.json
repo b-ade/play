@@ -5,6 +5,13 @@
   "configurations": [
     {
         "type": "java",
+        "name": "CodeLens (Launch) - GroupWords",
+        "request": "launch",
+        "mainClass": "GroupWords",
+        "projectName": "play_ac51065d"
+    },
+    {
+        "type": "java",
         "name": "CodeLens (Launch) - MaxContiguousSubArraySum",
         "request": "launch",
         "mainClass": "MaxContiguousSubArraySum",
