@@ -33,56 +33,50 @@ public class SpiralPrint {
             {11, 12, 13, 14, 15},
             {16, 17, 18, 19, 20}
         };
-        int[] spiraled = unwind(grid, 0, grid[0].length - 1, 0, grid.length - 1);
+        int[] spiraled = new int[grid[0].length * grid.length];
+        int fillCounter = 0;
+        unwind(grid, spiraled,fillCounter, 
+            0, grid[0].length - 1, 0, grid.length - 1);
         System.out.println(as2DString(grid)+"\nprinted out spirally is\n"+Arrays.toString(spiraled));
     }
 
-    static int[] unwind(int[][] grid,int columnStart,int columnEnd,int rowStart,int rowEnd){
+    static void unwind(int[][] grid, int[] toFill, int fillCounter,int columnStart,int columnEnd,int rowStart,int rowEnd){
         int width = columnEnd - columnStart + 1;
         int height = rowEnd - rowStart + 1;
 
         if(width < 1 || height < 1)//base case
-            return new int[0];
+            return;
 
         if(height >= 2){
-            int[] totalSpiral = new int[width * height];
-            int counter = 0;//to fill array for the spiral
-
             //copy top - left to right
             for (int i = columnStart; i <= columnEnd; i++) {
-                totalSpiral[counter++] = grid[rowStart][i];
+                toFill[fillCounter++] = grid[rowStart][i];
             }
 
             //insert inner right wall 
             for (int i = rowStart + 1; i < rowEnd ; i++) {
-                totalSpiral[counter++] = grid[i][columnEnd];
+                toFill[fillCounter++] = grid[i][columnEnd];
             }
 
             //copy bottom - right to left
             for (int i = columnEnd; i >= columnStart; i--) {
-                totalSpiral[counter++] = grid[rowEnd][i];
+                toFill[fillCounter++] = grid[rowEnd][i];
             }
 
             //insert inner left wall
             for (int i = rowEnd - 1; i > rowStart ; i--) {
-                totalSpiral[counter++] = grid[i][columnStart];
+                toFill[fillCounter++] = grid[i][columnStart];
             }
 
-            int[] innerRing = unwind(grid, columnStart + 1, columnEnd - 1, rowStart + 1, rowEnd - 1);
+            unwind(grid, toFill, fillCounter, 
+                columnStart + 1, columnEnd - 1, rowStart + 1, rowEnd - 1);
 
-            //combined and return outter ring array + inner ring array
-            for (int i = 0; i < innerRing.length; i++) {
-                totalSpiral[counter++] = innerRing[i]; 
-            }
-            return totalSpiral;
+            return;
         }
 
-        int[] tr = new int[width];
-        int counter = 0;
-        //inner grind is one row high
+        //inner grind is one row high, fill rest
         for (int i = columnStart; i <= columnEnd; i++) {
-            tr[counter++] = grid[rowStart][i];
+            toFill[fillCounter++] = grid[rowStart][i];
         }
-        return tr;
     }
 }
