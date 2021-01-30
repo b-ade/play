@@ -5,6 +5,13 @@
   "configurations": [
     {
         "type": "java",
+        "name": "CodeLens (Launch) - ReverseWords",
+        "request": "launch",
+        "mainClass": "ReverseWords",
+        "projectName": "play_ac51065d"
+    },
+    {
+        "type": "java",
         "name": "CodeLens (Launch) - MedianStream",
         "request": "launch",
         "mainClass": "MedianStream",
