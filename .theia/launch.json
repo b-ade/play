@@ -5,6 +5,13 @@
   "configurations": [
     {
         "type": "java",
+        "name": "CodeLens (Launch) - ArraysIntersection",
+        "request": "launch",
+        "mainClass": "ArraysIntersection",
+        "projectName": "play_ac51065d"
+    },
+    {
+        "type": "java",
         "name": "CodeLens (Launch) - ReverseWords",
         "request": "launch",
         "mainClass": "ReverseWords",
