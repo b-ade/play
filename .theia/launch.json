@@ -5,6 +5,13 @@
   "configurations": [
     {
         "type": "java",
+        "name": "CodeLens (Launch) - Compression",
+        "request": "launch",
+        "mainClass": "Compression",
+        "projectName": "play_ac51065d"
+    },
+    {
+        "type": "java",
         "name": "CodeLens (Launch) - ArrayProduct",
         "request": "launch",
         "mainClass": "ArrayProduct",
