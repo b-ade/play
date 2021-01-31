@@ -5,6 +5,13 @@
   "configurations": [
     {
         "type": "java",
+        "name": "CodeLens (Launch) - MoveZeros",
+        "request": "launch",
+        "mainClass": "MoveZeros",
+        "projectName": "play_ac51065d"
+    },
+    {
+        "type": "java",
         "name": "CodeLens (Launch) - SpiralPrint",
         "request": "launch",
         "mainClass": "SpiralPrint",
