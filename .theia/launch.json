@@ -5,6 +5,41 @@
   "configurations": [
     {
         "type": "java",
+        "name": "CodeLens (Launch) - BinaryTreeFloorCeiling",
+        "request": "launch",
+        "mainClass": "BinaryTreeFloorCeiling",
+        "projectName": "play_ac51065d"
+    },
+    {
+        "type": "java",
+        "name": "CodeLens (Launch) - QueueWithStacks",
+        "request": "launch",
+        "mainClass": "QueueWithStacks",
+        "projectName": "play_ac51065d"
+    },
+    {
+        "type": "java",
+        "name": "CodeLens (Launch) - ArithmeticBinaryTree",
+        "request": "launch",
+        "mainClass": "ArithmeticBinaryTree",
+        "projectName": "play_ac51065d"
+    },
+    {
+        "type": "java",
+        "name": "CodeLens (Launch) - SortRange",
+        "request": "launch",
+        "mainClass": "SortRange",
+        "projectName": "play_ac51065d"
+    },
+    {
+        "type": "java",
+        "name": "CodeLens (Launch) - Bonuses",
+        "request": "launch",
+        "mainClass": "Bonuses",
+        "projectName": "play_ac51065d"
+    },
+    {
+        "type": "java",
         "name": "CodeLens (Launch) - MoveZeros",
         "request": "launch",
         "mainClass": "MoveZeros",
