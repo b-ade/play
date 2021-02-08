@@ -5,6 +5,13 @@
   "configurations": [
     {
         "type": "java",
+        "name": "CodeLens (Launch) - RoomSchefuling",
+        "request": "launch",
+        "mainClass": "RoomSchefuling",
+        "projectName": "play_ac51065d"
+    },
+    {
+        "type": "java",
         "name": "CodeLens (Launch) - AnglesOfClock",
         "request": "launch",
         "mainClass": "AnglesOfClock",
