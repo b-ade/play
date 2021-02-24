@@ -5,6 +5,13 @@
   "configurations": [
     {
         "type": "java",
+        "name": "CodeLens (Launch) - Permutations",
+        "request": "launch",
+        "mainClass": "Permutations",
+        "projectName": "play_ac51065d"
+    },
+    {
+        "type": "java",
         "name": "CodeLens (Launch) - RoomSchefuling",
         "request": "launch",
         "mainClass": "RoomSchefuling",
